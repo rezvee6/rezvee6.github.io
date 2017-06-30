@@ -19,9 +19,9 @@
 				<div class="inner">
 					<a href="/" class="logo">Theory</a>
 					<nav id="nav">
-						<a href="/">Home</a>
-						<a href="/">Generic</a>
-						<a href="/">Elements</a>
+						<a href="index.html">Home</a>
+						<a href="generic.html">Media</a>
+						<a href="elements.html">Elements</a>
 					</nav>
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 				</div>
@@ -39,13 +39,15 @@
 					<div class="flex flex-3">
 						<article>
 							<header>
-								<h3>Magna tempus sed amet<br /> aliquam veroeros</h3>
+								<h3>I'm just learning!<br /> What do you think?</h3>
 							</header>
-							<p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu.</p>
+							<p>This webpage is mostly based on Bootstrap and I plan on adding cool new mini apps in it soon.</p>
 							<footer>
-								<a href="#" class="button special">More</a>
+
+						<!--	<a href="#" class="button special">More</a> -->
 							</footer>
 						</article>
+						<!--
 						<article>
 							<header>
 								<h3>Interdum lorem pulvinar<br /> adipiscing vitae</h3>
@@ -64,11 +66,12 @@
 								<a href="#" class="button special">More</a>
 							</footer>
 						</article>
+						-->
 					</div>
 				</div>
 			</section>
 
-		<!-- Two -->
+		<!-- Two 
 			<section id="two" class="wrapper style1 special">
 				<div class="inner">
 					<header>
@@ -97,7 +100,7 @@
 							<h3>Tempus</h3>
 							<p>Fusce pellentes</p>
 						</div>
-						-->
+
 						<div class="box person">
 							<div class="image round">
 								<img src="images/mark-zuckerberg.jpg" alt="Person 4" />
@@ -108,6 +111,8 @@
 					</div>
 				</div>
 			</section>
+
+			end two -->
 
 		<!-- Three -->
 			<section id="three" class="wrapper special">
@@ -144,21 +149,12 @@
 							<p>Cryptocurrency is a digital currency in which encryption techniques are used to regulate the generation of units of currency and verify the transfer of funds, operating independently of a central bank. Click more for information on ethereum</p>
 							<footer>
 							<div class="borderExtra">
-								<script type="text/javascript" >
-									baseUrl = "https://widgets.cryptocompare.com/";
-									var scripts = document.getElementsByTagName("script");
-									var embedder = scripts[ scripts.length - 1 ];
-									(function (){
-									var appName = encodeURIComponent(window.location.hostname);
-									if(appName==""){appName="local";}
-									var s = document.createElement("script");
-									s.type = "text/javascript";
-									s.async = true;
-									var theUrl = baseUrl+'serve/v3/coin/chart?fsym=ETH&tsyms=USD,EUR,CNY,GBP';
-									s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
-									embedder.parentNode.appendChild(s);
-									})();
-								</script>
+								
+
+								<div id="chart-container"></div>
+
+								<script type="text/javascript" src="https://static.cryptowat.ch/assets/scripts/embed.bundle.js"></script>
+								
 								</div>
 								<a href="https://www.ethereum.org/" class="button special">More</a>
 							</footer>

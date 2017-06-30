@@ -3029,6 +3029,11 @@
 
 /* Footer */
 
+	#chart-container {
+  width: 500px;
+  height: 400px;
+}
+
 	#footer .inner {
 		border-top: 1px solid #dbdbdb;
 		padding-top: 3em;
@@ -3086,3 +3091,4 @@
 		}
 
 	}
+
