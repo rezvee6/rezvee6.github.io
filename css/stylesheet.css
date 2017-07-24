@@ -26,7 +26,7 @@ body {
       padding-bottom: 70px;
   }
   .navbar {
-      padding-top: 15px;
+      padding-top: 17px;
       padding-bottom: 15px;
       border: 0;
       border-radius: 0;
@@ -39,7 +39,7 @@ body {
   }
 
   .image-logo{
-    width: 80px ;
+    width: 70px ;
     margin-top: -20px;
   }
 
@@ -62,6 +62,8 @@ body {
   padding: 10px;
   border-right: 1px solid #70726F;
   transition: all 0.5s ;
+  border-right: none;
+  border-left-width: : 0px;
 
 }
 .footer a:first-child {
