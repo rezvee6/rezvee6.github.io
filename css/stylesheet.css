@@ -42,3 +42,37 @@ body {
     width: 80px ;
     margin-top: -20px;
   }
+
+  .navbar-defauklt{
+    border-color: rgba(255,255,255,0);
+  }
+
+  .footer {
+  background: #fff;
+  padding: 20px 10px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom:0;
+  margin: 0 auto;
+}
+.footer a {
+  color: #000;
+  font-size: 23px;
+  padding: 10px;
+  border-right: 1px solid #70726F;
+  transition: all 0.5s ;
+
+}
+.footer a:first-child {
+  border-left: 1px solid #70726F;
+}
+.footer a:hover {
+  color:#1abc9c; /* Green */
+  transform: scale(1.5);
+}
+
+
+  .wrap:hover .favicon {
+    transform: scale(2);
+  }
