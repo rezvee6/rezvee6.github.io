@@ -6,13 +6,13 @@
 /* v1.0.3
 /* ----------------------------------------------- */
 
- var num_particles = 130;
+ var num_particles = 110;
 
  windowSize = $(window).width();
 
     
    if (windowSize < 500) {
-            num_particles = 50;
+            num_particles = 25;
         //console.log("working");
       }
     
