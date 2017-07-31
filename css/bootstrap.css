@@ -5,7 +5,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
+  
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -4541,7 +4541,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #463f3f;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #463f3f;
+  color: #000;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -4993,7 +4993,7 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #eee;
+  
 }
 .jumbotron h1,
 .jumbotron .h1 {
