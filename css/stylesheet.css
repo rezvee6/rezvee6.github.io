@@ -1,4 +1,5 @@
 body {
+    
       font-size: : 20px; 
       font-family: 'Open sans', 'sans-serif';
       line-height: 1.8;
@@ -64,11 +65,10 @@ body {
   .footer {
   background: rgba(255, 255, 255, 0.0);
   padding: 20px 10px;
-  position: absolute;
+  /*footer absolute */
   width: 100%;
   text-align: center;
-  bottom:0;
-  margin: 0 auto;
+ margin-top: 50px
 }
 .footer a {
   color: #000;
@@ -78,6 +78,7 @@ body {
   transition: all 0.5s ;
   border-right: none;
   border-left-width: : 0px;
+
 
 }
 .footer a:first-child {
@@ -152,19 +153,18 @@ canvas{
 
 .div1 {
 
-/*background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-*/
-font-size: 4.5rem;
-color: #000;
-font-weight: 100;
+  /*background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  */
+  font-size: 4.5rem;
 
 
-text-align: center;
-margin-top: -300px;
 
-animation-duration: 1.5s;
-animation-name: fadeAndScale;
-animation-timing-function: cubic-bezier(.71,.55,.62,1);
+  text-align: center;
+  margin-top: -300px;
+
+  animation-duration: 1.5s;
+  animation-name: fadeAndScale;
+  animation-timing-function: cubic-bezier(.71,.55,.62,1);
 }
 
 @keyframes fadeAndScale {
@@ -177,10 +177,13 @@ animation-timing-function: cubic-bezier(.71,.55,.62,1);
     transform: scale(1, 1);
   }
 }
+
 .div2 {
 
-
-
+ margin-top: 100px;
+animation-duration: 1.5s;
+  animation-name: fadeAndScale;
+  animation-timing-function: cubic-bezier(.71,.55,.62,1);
 }
 
 .div3 {
@@ -188,4 +191,6 @@ animation-timing-function: cubic-bezier(.71,.55,.62,1);
 
 
 }
+
+
 
