@@ -70,5 +70,17 @@ particlesJS('particles-js', {
   retina_detect: true
  
 });
+var price;
+
+function setup(){
+  loadJSON('https://api.coinmarketcap.com/v1/ticker/ethereum/')
+}
+
+function draw() {
+  background(0);
+  text(ethereum.name,10,50)
+}
+
+
 
 
