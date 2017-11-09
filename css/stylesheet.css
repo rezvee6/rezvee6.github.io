@@ -188,7 +188,10 @@ animation-duration: 1.5s;
 
 .div3 {
 
-
+ margin-top: 50px;
+animation-duration: 1.5s;
+  animation-name: fadeAndScale;
+  animation-timing-function: cubic-bezier(.71,.55,.62,1);
 
 }
 
