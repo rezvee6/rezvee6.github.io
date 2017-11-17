@@ -1,24 +1,11 @@
-<!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>simpleWeather.demo.js v3.1.0</title>
-  <script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
-
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-  
-      <style>
-
 
 @font-face {
     font-family: 'weather';
-    src: url('https://rezvee6.github.io//artill_clean_icons-webfont.eot');
-    src: url('https://rezvee6.github.io//artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'),
-         url('https://rezvee6.github.io//artill_clean_icons-webfont.woff') format('woff'),
-         url('https://rezvee6.github.io//artill_clean_icons-webfont.ttf') format('truetype'),
-         url('https://rezvee6.github.io//artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.woff') format('woff'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.ttf') format('truetype'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -126,19 +113,3 @@ i {
 #weather .currently {
   margin: 0 20px;
 }
-    </style>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-
-</head>
-
-<body>
-  <!-- Docs at http://http://simpleweatherjs.com -->
-<div id="weather"></div>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js'></script>
-
-    <script  src="js/weather.js"></script>
-
-</body>
-</html>
