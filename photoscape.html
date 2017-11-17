@@ -14,19 +14,20 @@
 
 @font-face {
     font-family: 'weather';
-    src: url('https://rezvee6.github.io//artill_clean_icons-webfont.eot');
-    src: url('https://rezvee6.github.io//artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'),
-         url('https://rezvee6.github.io//artill_clean_icons-webfont.woff') format('woff'),
-         url('https://rezvee6.github.io//artill_clean_icons-webfont.ttf') format('truetype'),
-         url('https://rezvee6.github.io//artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');
+    src: url("artill_clean_icons-webfont.eot");
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot?#iefix") format('embedded-opentype'),
+         url('artill_clean_icons-webfont.woff') format('woff'),
+         url('artill_clean_icons-webfont.ttf') format('truetype'),
+         url('artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
+
 html {
   width: 100%;
   height: 100%;
-  background: #1192d3 url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/austin-2.jpg) no-repeat bottom right;
+  background: #1192d3 url("img/wallhavenkuba.jpg"); no-repeat bottom right;
   background-size: cover;
 }
 
@@ -37,7 +38,7 @@ body {
 
 #weather {
   width: 500px;
-  margin: 0px auto;
+  margin: 10% auto;
   text-align: center;
   text-transform: uppercase;
 }
@@ -45,7 +46,7 @@ body {
 i {
   color: #fff;
   font-family: weather;
-  font-size: 150px;
+  font-size: 120px;
   font-weight: normal;
   font-style: normal;
   line-height: 1.0;
@@ -104,20 +105,20 @@ i {
 #weather h2 {
   margin: 0 0 8px;
   color: #fff;
-  font-size: 100px;
+  font-size: 65px;
   font-weight: 300;
   text-align: center;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
 }
 
 #weather ul {
-  margin: 0;
+  margin: -5%;
   padding: 0;
 }
 
 #weather li {
-  background: #fff;
-  background: rgba(255,255,255,0.90);
+  
+  color: #fff;
   padding: 20px;
   display: inline-block;
   border-radius: 5px;
@@ -128,17 +129,43 @@ i {
 }
     </style>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js'></script>
+    <link rel="stylesheet" href="css/clock.css">
+    <script  src="js/weather.js"></script>
 </head>
 
 <body>
+
+
+
+
+
+
   <!-- Docs at http://http://simpleweatherjs.com -->
 <div id="weather"></div>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js'></script>
+ 
 
-    <script  src="js/weather.js"></script>
+
+  <!-- TIME --> 
+<div class="clock">
+            <div class="inside">
+                <div class="content">
+                    <p class='days'><span id="sun">SUN</span>&nbsp;&nbsp;<span id="mon">MON</span>&nbsp;&nbsp;<span id=tus"">TUS</span>&nbsp;&nbsp;<span id="wed">WED</span>&nbsp;&nbsp;<span id="thu">THU</span>&nbsp;&nbsp;<span id="fri">FRI</span>&nbsp;&nbsp;<span id="sat">SAT</span></p>
+                    <br>
+                    <p class='text'><span id='hours'></span> : <span id='min'></span> : <span id='sec'></span>&nbsp;&nbsp;<span id='time'></span></p>
+                    <p id=date>
+                        <span id='cal'><img src="https://i.imgur.com/DzEzjHh.png?1" alt="cal" /></span>
+                        <span id='day'></span>
+                        <span id='month'></span>
+                        <span id='year'></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    <script  src="js/clock.js"></script>
+  <!-- TIME --> 
 
 </body>
 </html>

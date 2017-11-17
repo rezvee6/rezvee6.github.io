@@ -2,7 +2,7 @@
 //Docs at http://simpleweatherjs.com
 $(document).ready(function() {
   $.simpleWeather({
-    location: 'Ennis, Ireland',
+    location: 'Clare, Ireland',
     woeid: '',
     unit: 'C',
     success: function(weather) {
