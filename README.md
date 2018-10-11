@@ -1,3 +1,4 @@
 # rezvee6.github.io
-first
-Just a side project that will help to boost my html/css/js skills!
+https://rezvee6.github.io/
+
+My personal webpage that I work on from time to time :)
