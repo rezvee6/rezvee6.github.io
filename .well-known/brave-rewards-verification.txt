@@ -1,4 +1,4 @@
 This is a Brave Rewards publisher verification file.
 
 Domain: rezvee6.github.io
-Token: b2f98c2b0fd981edd12a501c82a3750c2a4a616073b80de82dd3d5162cf407ed
+Token: 3f8f7f1b1d6459827c660e68ef687edff416f66c0db8068d3edfcb781e559d6e
