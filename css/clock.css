@@ -1,101 +1,48 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html, body {
-    
-    font-size: 25px;
-}
-
-.clock {
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .container {
+    position: relative;
+    display: none;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
     position: absolute;
-    margin: auto;
-    top: 10%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 900px;
-    height: 300px;
-    background-color: rgba(255, 255, 255, 0);
-    text-align: center;
-    color: #fff;
-    font-family: 'Quicksand', 'Helvetica', Arial, sans-serif;
-    font-weight: lighter;
-    font-size: 30px;
-}
-
-.inside {
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
     position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 900px;
-    height: 250px;
-    background-color: rgba(255, 255, 255, 0);
-}
-
-.content {
-    margin-top: 10%;
-    width: auto;
-    height: auto;
-    text-align: center;
-}
-
-.days {
-    color: rgba(255, 255, 255, 0.2);
-    font-size: 26px;
-    margin-top: 15%;
-}
-
-.days span {
-    margin-left: 1%;
-}
-
-.text{
-    position: absolute;
-    margin: auto;
-    top: -40%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin-top: 10%;
-    font-size: 3.5em;
-}
-
-#time {
-    font-size: 1.5rem;
-}
-
-#date {
-    margin-top: 12%;
-    margin-left: -20%;
-}
-
-#cal img {
-    width: 30px;
-    height: 30px;
-    
-}
-
-span#day {
-    position: absolute;
-    margin-top: -125px;
-    margin-left: -10px;
-}
-
-span#month {
-    position: absolute;
-    margin-top: -125px;
-    margin-left: 35px;
-
-}
-
-span#year {
-    position: absolute;
-    margin-top: -125px;
-    margin-left: 110px;
-
-}
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
