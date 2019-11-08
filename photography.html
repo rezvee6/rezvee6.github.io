@@ -9,7 +9,9 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
   <link href="css/stylesheet.css" rel="stylesheet">
+  <link href="css/gallery.css" rel="stylesheet">
   <link href="css/bootstrap.css" rel="stylesheet">
+  <script src="js/gallery.js"></script>
   <link href="css/animate.css" rel="stylesheet">
   <link rel="icon" href="img/logo_06_16ico.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -48,21 +50,54 @@
 
 
 
+    <div class="separate">
 
+    </div>
 
+    <!-- The grid: four columns -->
+        <div class="row">
+          <div class="column parent zoom">
+            <img src="img/wallhaven-602625.jpg" alt="Nature" onclick="myFunction(this);" >
+          </div>
+          <div class="column zoom">
+            <img src="img/wallhaven-158424.jpg" alt="Snow" onclick="myFunction(this);">
+          </div>
+          <div class="column zoom">
+            <img src="img/20190731_210519.jpg" alt="Mountains" onclick="myFunction(this);">
+          </div>
+          <div class="column zoom">
+            <img src="img/20190727_184751.jpg" alt="Lights" onclick="myFunction(this);">
+          </div>
+          <div class="column zoom">
+            <img src="img/FB_IMG_1562368127363.jpg" alt="Lights" onclick="myFunction(this);">
+          </div>
+          <div class="column zoom">
+            <img src="img/20190628_205242.jpg" alt="Snow" onclick="myFunction(this);">
+          </div>
+          <div class="column zoom">
+            <img src="img/20190625_204114.jpg" alt="Lights" onclick="myFunction(this);">
+          </div>
+          <div class="column zoom">
+            <img src="img/20190325_191429(0).jpg" alt="Lights" onclick="myFunction(this);">
+          </div>
+          <div class="column zoom">
+            <img src="img/20180928_194826.jpg" alt="Lights" onclick="myFunction(this);">
+          </div>
+          <div class="column zoom">
+            <img src="img/20180730_205642.jpg" alt="Lights" onclick="myFunction(this);">
+          </div>
+        </div>
 
+        <!-- The expanding image container -->
+        <div class="largeImage" >
+          <!-- Close the image -->
+          <!-- <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span> -->
+          <!-- Expanded image -->
+          <img  src="img/wallhaven-602625.jpg" class="largeImage" id="expandedImg" onclick="toggleDisplay(this);">
 
-<div class=" container text-center">
- <h1 style="margin-top: 300px">Under Construction</h1>
- <i class="fa fa-3x fa-wrench" aria-hidden="true"></i>
-</div>
-    
-
-
-
-
-
-
+          <!-- Image text -->
+          <!-- <div id="imgtext"></div> -->
+        </div>
 
     <!-- Footer -->
     <footer class="footer navbar-fixed-bottom">
