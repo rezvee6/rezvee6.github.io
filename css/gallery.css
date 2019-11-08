@@ -3,9 +3,19 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+  margin-top: 12vh;
+}
+
+
+@media (min-width: 768px){
+  .row{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
   margin-right: 20%;
   margin-left: 20%;
-  margin-top: 80px;
+  margin-top: 10vh;
+  }
 }
 
 .largeImage{
