@@ -12,9 +12,9 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
-  margin-right: 20%;
-  margin-left: 20%;
-  margin-top: 10vh;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 15vh;
   }
 }
 
@@ -82,12 +82,20 @@ transition: transform .2s;
 }
 
 
-#content-desktop {display: block;}
-#content-mobile {display: none;}
+#content-desktop {
+  display: block;
+  margin-top: -8vh;
+}
+#content-mobile {
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
 
 #content-desktop {display: none;}
-#content-mobile {display: block;}
+#content-mobile {
+  display: block;
+  margin-top: -15vh;
+}
 
 }
