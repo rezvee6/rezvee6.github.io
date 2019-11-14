@@ -5,8 +5,7 @@
   <title>Rezvee Sikder</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
   <link href="css/stylesheet.css" rel="stylesheet">
   <link href="css/gallery.css" rel="stylesheet">
@@ -17,7 +16,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+   <!-- Add the new slick-theme.css if you want the default styling -->
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="js/slick.js"></script>
+
 </head>
 
 <body>
@@ -48,13 +54,180 @@
       </div>
     </nav>
 
+    <!-- Mobile -->
+    <div id="content-mobile">
 
+      <div class="separate">
 
-    <div class="separate">
+      </div>
+  
+      <!-- The grid: four columns -->
+          <div class="row">
+            <div class="column parent zoom">
+              <img src="img/wallhaven-602625.jpg" alt="Nature" onclick="myFunction(this);" >
+            </div>
+            <div class="column zoom">
+              <img src="img/wallhaven-158424.jpg" alt="Snow" onclick="myFunction(this);">
+            </div>
+            <div class="column zoom">
+              <img src="img/20190731_210519.jpg" alt="Mountains" onclick="myFunction(this);">
+            </div>
+            <div class="column zoom">
+              <img src="img/20190727_184751.jpg" alt="Lights" onclick="myFunction(this);">
+            </div>
+            <div class="column zoom">
+              <img src="img/FB_IMG_1562368127363.jpg" alt="Lights" onclick="myFunction(this);">
+            </div>
+            <div class="column zoom">
+              <img src="img/20190628_205242.jpg" alt="Snow" onclick="myFunction(this);">
+            </div>
+            <div class="column zoom">
+              <img src="img/20190625_204114.jpg" alt="Lights" onclick="myFunction(this);">
+            </div>
+            <div class="column zoom">
+              <img src="img/20190325_191429(0).jpg" alt="Lights" onclick="myFunction(this);">
+            </div>
+            <div class="column zoom">
+              <img src="img/20180928_194826.jpg" alt="Lights" onclick="myFunction(this);">
+            </div>
+            <div class="column zoom">
+              <img src="img/20180730_205642.jpg" alt="Lights" onclick="myFunction(this);">
+            </div>
+          </div>
+  
+          <!-- The expanding image container -->
+          <div class="largeImage" >
+            <!-- Close the image -->
+            <!-- <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span> -->
+            <!-- Expanded image -->
+            <img  src="img/wallhaven-602625.jpg" class="largeImage" id="expandedImg" onclick="toggleDisplay(this);">
+  
+            <!-- Image text -->
+            <!-- <div id="imgtext"></div> -->
+          </div>
+
 
     </div>
 
-    <!-- The grid: four columns -->
+    <!-- Mobile ends -->
+
+    <!-- Desktop starts -->
+    <div id="content-desktop">
+      <section class="center slider">
+        <div class="zoom">
+          <img src="img/wallhaven-602625.jpg" alt="Nature" onclick="myFunction(this);" >
+        </div>
+        <div class="zoom">
+          <img src="img/wallhaven-158424.jpg" alt="Nature" onclick="myFunction(this);" >
+        </div>
+        <div class="zoom">
+          <img src="img/20190731_210519.jpg" alt="Nature" onclick="myFunction(this);" >
+        </div>
+        <div class="zoom">
+          <img src="img/FB_IMG_1562368127363.jpg" alt="Nature" onclick="myFunction(this);" >
+        </div>
+        <div class="zoom">
+          <img src="img/20190628_205242.jpg" alt="Nature" onclick="myFunction(this);" >
+        </div>
+        <div class="zoom">
+          <img src="img/20190625_204114.jpg" alt="Nature" onclick="myFunction(this);" >
+        </div>
+        <div class="zoom">
+          <img src="img/20190325_191429(0).jpg" alt="Nature" onclick="myFunction(this);" >
+        </div>
+        <div class="zoom">
+          <img src="img/20180928_194826.jpg" alt="Nature" onclick="myFunction(this);" >
+        </div>
+        <div class="zoom">
+          <img src="img/20180730_205642.jpg" alt="Nature" onclick="myFunction(this);" >
+        </div>
+      </section> 
+
+     
+        <div class="largeImage" >
+          
+          <!-- <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span> -->
+          <!-- Expanded image -->
+          <img  src="img/wallhaven-602625.jpg" class="largeImage" id="expandedImg" onclick="toggleDisplay(this);">
+
+          <!-- Image text -->
+          <div id="imgtext"></div>
+        
+      <script type="text/javascript">
+        $(document).on('ready', function() {
+          $(".vertical-center-4").slick({
+            dots: true,
+            vertical: true,
+            centerMode: true,
+            slidesToShow: 4,
+            slidesToScroll: 2
+          });
+          $(".vertical-center-3").slick({
+            dots: true,
+            vertical: true,
+            centerMode: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+          });
+          $(".vertical-center-2").slick({
+            dots: true,
+            vertical: true,
+            centerMode: true,
+            slidesToShow: 2,
+            slidesToScroll: 2
+          });
+          $(".vertical-center").slick({
+            dots: true,
+            vertical: true,
+            centerMode: true,
+          });
+          $(".vertical").slick({
+            dots: true,
+            vertical: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+          });
+          $(".regular").slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+          });
+          $(".center").slick({
+            dots: true,
+            infinite: true,
+            centerMode: true,
+            slidesToShow: 5,
+            slidesToScroll: 3
+          });
+          $(".variable").slick({
+            dots: true,
+            infinite: true,
+            variableWidth: true
+          });
+          $(".lazy").slick({
+            lazyLoad: 'ondemand', // ondemand progressive anticipated
+            infinite: true
+          });
+        });
+    </script>
+    
+
+</div>
+  <!-- Desk top ends -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+    The grid: four columns
         <div class="row">
           <div class="column parent zoom">
             <img src="img/wallhaven-602625.jpg" alt="Nature" onclick="myFunction(this);" >
@@ -86,18 +259,18 @@
           <div class="column zoom">
             <img src="img/20180730_205642.jpg" alt="Lights" onclick="myFunction(this);">
           </div>
-        </div>
+        </div> -->
 
         <!-- The expanding image container -->
-        <div class="largeImage" >
+        <!-- <div class="largeImage" > -->
           <!-- Close the image -->
           <!-- <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span> -->
           <!-- Expanded image -->
-          <img  src="img/wallhaven-602625.jpg" class="largeImage" id="expandedImg" onclick="toggleDisplay(this);">
+          <!-- <img  src="img/wallhaven-602625.jpg" class="largeImage" id="expandedImg" onclick="toggleDisplay(this);"> -->
 
           <!-- Image text -->
           <!-- <div id="imgtext"></div> -->
-        </div>
+        <!-- </div> -->
 
     <!-- Footer -->
     <footer class="footer navbar-fixed-bottom">

@@ -29,5 +29,3 @@ function toggleDisplay(imgs) {
   //  expandImg.parentElement.style.display = "none";
 }
 
-
-
