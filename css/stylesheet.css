@@ -281,17 +281,33 @@ animation-duration: 1.5s;
 }
 
 /* Cryptocurrency articles */
+.article-thumbnail img{
+  position: absolute;
+  margin-top: 19%;
+  margin-left: -33%;
+}
+
 .card-article {
+  background-color: white;
   position: relative;
-  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  max-width: 50%;
+  max-width: 30%;
   margin: auto;
   text-align: center;
+  transition: transform .2s; /* Animation */
+  margin-bottom: 2%;
 }
+
+.card-article:hover {
+  transform: scale(1.03); 
+  transition: transform .2s;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);
+  }
 
 .card-article-text{
   padding: 2% 5% 5% 5%;
+  margin-left: 50%;
 }
 
 .fa { 
