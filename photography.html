@@ -14,7 +14,7 @@
   <link href="css/animate.css" rel="stylesheet">
   <link rel="icon" href="img/logo_06_16ico.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/slick.css"/>
    <!-- Add the new slick-theme.css if you want the default styling -->
@@ -28,9 +28,18 @@
 
 <body>
 
+  <script>
+    $(window).load(function(){
+  $('.preloader').fadeOut();
+});
 
+    
+    </script>
+  <div class="preloader">
+    <img src="img/spinner.svg" alt="spinner">
+  </div>
   <!-- Navbar -->
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default z-index">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
@@ -45,6 +54,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="https://rezvee6.github.io/">Home</a></li>
             <li><a href="https://rezvee6.github.io/movies">Movies</a></li>
+            <li><a href="https://rezvee6.github.io/design">Design</a></li>
             <li><a href="https://rezvee6.github.io/photography">Photography</a></li>
             <li><a href="https://rezvee6.github.io/cryptocurrency">Cryptocurrency</a></li>
             <li><a href="https://rezvee6.github.io/photoscape">Photoscape</a></li>

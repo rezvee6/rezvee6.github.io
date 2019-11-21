@@ -333,6 +333,11 @@ animation-duration: 1.5s;
     margin: 0px;
     padding-top: 42px;
   }
+  .card-article:hover {
+    transform: scale(1.0); 
+    transition: transform .2s;
+    
+    }
 }
 
 
