@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Rezvee Sikder</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="css/stylesheet.css" rel="stylesheet">
+  <link href="css/gallery.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <script src="js/gallery.js"></script>
+  <link href="css/animate.css" rel="stylesheet">
+  <link rel="icon" href="img/logo_06_16ico.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+   <!-- Add the new slick-theme.css if you want the default styling -->
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="js/slick.js"></script>
+
+</head>
+
+<body>
+
+  <script>
+    $(window).load(function(){
+  $('.preloader').fadeOut();
+});
+
+    
+    </script>
+  <div class="preloader">
+    <img src="img/spinner.svg" alt="spinner">
+  </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-default z-index">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">
+          <img class="image-logo" src="img/logo_06_16ico.png"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://rezvee6.github.io/">Home</a></li>
+            <li><a href="https://rezvee6.github.io/movies">Movies</a></li>
+            <li><a href="https://rezvee6.github.io/design">Design</a></li>
+            <li><a href="https://rezvee6.github.io/photography">Photography</a></li>
+            <li><a href="https://rezvee6.github.io/RSMedia">RS Media</a></li>
+            <li><a href="https://rezvee6.github.io/cryptocurrency">Cryptocurrency</a></li>
+            <li><a href="https://rezvee6.github.io/photoscape">Photoscape</a></li>
+            <li><a href="https://rezvee6.github.io/about">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile -->
+    <div id="content-mobile">
+
+      <div class="separate">
+
+      </div>
+  
+      <!-- The grid: four columns -->
+          <div class="row">
+            <div class="column zoom">
+              <img src="rsmedia/DSC03430.jpg" alt="Mountains" onclick="myFunction(this);">
+            </div>
+            <div class="column zoom">
+              <img src="rsmedia/DSC03446.jpg" alt="Lights" onclick="myFunction(this);">
+            </div>
+            <div class="column zoom">
+              <img src="rsmedia/DSC03476.jpg" alt="Lights" onclick="myFunction(this);">
+            </div>
+            <div class="column zoom">
+              <img src="rsmedia/DSC03504.jpg" alt="Snow" onclick="myFunction(this);">
+            </div>
+            <div class="column zoom">
+              <img src="rsmedia/DSC03527.jpg" alt="Lights" onclick="myFunction(this);">
+            </div>
+            <div class="column zoom">
+              <img src="rsmedia/DSC03533.jpg" alt="Lights" onclick="myFunction(this);">
+            </div>
+            <div class="column zoom">
+              <img src="rsmedia/DSC03539.jpg" alt="Lights" onclick="myFunction(this);">
+            </div>
+            
+            
+          </div>
+        </br>
+    </div>
+
+    <!-- Mobile ends -->
+
+    <!-- Desktop starts -->
+    <div id="content-desktop">
+      <section class="center slider">
+        <div class=" zoom">
+          <img src="rsmedia/DSC03430.jpg" alt="Mountains" onclick="myFunction(this);">
+        </div>
+        <div class="zoom">
+          <img src="rsmedia/DSC03446.jpg" alt="Lights" onclick="myFunction(this);">
+        </div>
+        <div class="zoom">
+          <img src="rsmedia/DSC03476.jpg" alt="Lights" onclick="myFunction(this);">
+        </div>
+        <div class=" zoom">
+          <img src="rsmedia/DSC03504.jpg" alt="Snow" onclick="myFunction(this);">
+        </div>
+        <div class=" zoom">
+          <img src="rsmedia/DSC03527.jpg" alt="Lights" onclick="myFunction(this);">
+        </div>
+        <div class=" zoom">
+          <img src="rsmedia/DSC03533.jpg" alt="Lights" onclick="myFunction(this);">
+        </div>
+        <div class="zoom">
+          <img src="rsmedia/DSC03539.jpg" alt="Lights" onclick="myFunction(this);">
+        </div>
+        
+       
+      </section> 
+
+     
+        <div class="largeImage" >
+          
+          <!-- <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span> -->
+          <!-- Expanded image -->
+          <img  src="rsmedia/DSC03539.jpg" class="largeImage" id="expandedImg" onclick="toggleDisplay(this);">
+
+          <!-- Image text -->
+          <div id="imgtext"></div>
+        </br>
+      <script type="text/javascript">
+        $(document).on('ready', function() {
+          $(".vertical-center-4").slick({
+            dots: true,
+            vertical: true,
+            centerMode: true,
+            slidesToShow: 4,
+            slidesToScroll: 2
+          });
+          $(".vertical-center-3").slick({
+            dots: true,
+            vertical: true,
+            centerMode: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+          });
+          $(".vertical-center-2").slick({
+            dots: true,
+            vertical: true,
+            centerMode: true,
+            slidesToShow: 2,
+            slidesToScroll: 2
+          });
+          $(".vertical-center").slick({
+            dots: true,
+            vertical: true,
+            centerMode: true,
+          });
+          $(".vertical").slick({
+            dots: true,
+            vertical: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+          });
+          $(".regular").slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+          });
+          $(".center").slick({
+            dots: true,
+            infinite: true,
+            centerMode: true,
+            slidesToShow: 5,
+            slidesToScroll: 3
+          });
+          $(".variable").slick({
+            dots: true,
+            infinite: true,
+            variableWidth: true
+          });
+          $(".lazy").slick({
+            lazyLoad: 'ondemand', // ondemand progressive anticipated
+            infinite: true
+          });
+        });
+    </script>
+    
+
+</div>
+  <!-- Desk top ends -->
+</div>  
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container text-center">
+        <div class="favicon" >
+          <a href="https://www.facebook.com/" style="border-left-width: 0px;"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+          <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </html>
