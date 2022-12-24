@@ -10,14 +10,7 @@
   
   <link rel="icon" href="img/logo_06_16ico.png">
   <link rel="stylesheet" href="css/weather.css">
-      <style>
-        html {
-          width: 100%;
-          height: 100%;
-          background: #1192d3 url("img/wallhaven0011.jpg"); no-repeat bottom right;
-          background-size: cover;
-        }
-      </style>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
@@ -27,6 +20,22 @@
 </head>
 
 <body>
+  <script>
+  window.onload = function() {
+    var imageIndex = 1;
+    var images = ['img/photoscape/DSC09604.jpg', 'img/photoscape/DSC09612.jpg', 'img/photoscape/DSC09624.jpg','img/photoscape/DSC09614.jpg'];
+    // Generate a random index between 0 and the length of the images array
+  var randomIndex = Math.floor(Math.random() * images.length);
+
+// Set the page's background image to the image at the randomly selected index
+document.body.style.backgroundImage = 'url(' + images[randomIndex] + ')';
+    document.body.addEventListener('click', function() {
+      imageIndex = (imageIndex + 1) % images.length;
+      console.log("test");
+      document.body.style.backgroundImage = 'url(' + images[imageIndex] + ')';
+    });
+  }
+  </script>
   <!-- Docs at http://http://simpleweatherjs.com -->
 <div id="weather"></div>
  
@@ -55,4 +64,6 @@
   </script>
 
 </body>
+
+
 </html>
