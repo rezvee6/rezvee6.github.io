@@ -37,9 +37,20 @@ document.body.style.backgroundImage = 'url(' + images[randomIndex] + ')';
   }
   </script>
   <!-- Docs at http://http://simpleweatherjs.com -->
-<div id="weather"></div>
- 
-
+<div id="weather" ></div>
+<script>
+fetch('https://type.fit/api/quotes')
+  .then(response => response.json())
+  .then(data => {
+    // Get a random index from the array of quotes
+    const index = Math.floor(Math.random() * data.length);
+    // Get the quote text and author from the array
+    const quoteText = data[index].text;
+    const quoteAuthor = data[index].author;
+    // Set the quote text and author in the HTML element
+    document.getElementById('quote-container').innerHTML = `"${quoteText}" - ${quoteAuthor}`;
+  });
+</script>
 
   <!-- TIME --> 
 <div class="clock">
@@ -62,7 +73,7 @@ document.body.style.backgroundImage = 'url(' + images[randomIndex] + ')';
   <script>
   !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
   </script>
-
+  <div id="quote-container" class="quote"></div>
 </body>
 
 
